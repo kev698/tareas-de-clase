@@ -1,0 +1,41 @@
+//Definimos la superclase Formas
+class Formas:
+    def __init__(self, nombre):
+        self.nombre = nombre
+    
+    def dibujar(self):
+        pass  # Método que será sobrescrito en cada subclase
+
+//Definimos las subclases que heredan de Formas
+class Circulo(Formas):
+    def __init__(self):
+        super().__init__("Círculo")
+    
+    def dibujar(self):
+        print("Dibujando un Círculo")
+
+//class Cuadrado(Formas):
+    def __init__(self):
+        super().__init__("Cuadrado")
+    
+    def dibujar(self):
+        print("Dibujando un Cuadrado")
+
+//class Triangulo(Formas):
+    def __init__(self):
+        super().__init__("Triángulo")
+    
+    def dibujar(self):
+        print("Dibujando un Triángulo")
+
+//class Rectangulo(Formas):
+    def __init__(self):
+        super().__init__("Rectángulo")
+    
+    def dibujar(self):
+        print("Dibujando un Rectángulo")
+
+// Prueba de las clases
+figuras = [Circulo(), Cuadrado(), Triangulo(), Rectangulo()]
+for figura in figuras:
+    figura.dibujar()
