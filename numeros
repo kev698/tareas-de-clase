@@ -1,0 +1,21 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+
+/**
+ *
+ * @author kevin
+ */
+public class numeros2 {
+    
+}
+public class NumerosPares {
+    public static void main(String[] args) {
+        // Imprimir los números pares del 2 al 100
+        System.out.println("Números pares del 2 al 100:");
+        for (int i = 2; i <= 100; i += 2) {
+            System.out.println(i);
+        }
+    }
+}
