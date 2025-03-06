@@ -1,0 +1,47 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+
+/**
+ *
+ * @author kevin
+ */
+public class recursos {
+    
+
+
+
+
+    // Método que retorna un mensaje fijo
+    public static String obtenerMensajePOO() {
+        return "Programación Orientada a Objetos 2021";
+    }
+
+    // Método que verifica si un estudiante es mayor o menor de edad
+    public static String verificarMayorEdad(int edad) {
+        return (edad >= 21) ? "Mayor de edad" : "Menor de edad";
+    }
+
+    // Método que multiplica dos números enteros
+    public static int multiplicarNumeros(int num1, int num2) {
+        return num1 * num2;
+    }
+
+    // Método que genera una lista de números del 1 hasta X
+    public static List<Integer> generarListaNumeros(int X) {
+        List<Integer> numeros = new ArrayList<>();
+        for (int i = 1; i <= X; i++) {
+            numeros.add(i);
+        }
+        return numeros;
+    }
+
+    public static void main(String[] args) {
+        // Prueba de los métodos
+        System.out.println(obtenerMensajePOO());
+        System.out.println(verificarMayorEdad(22));
+        System.out.println(multiplicarNumeros(5, 3));
+        System.out.println(generarListaNumeros(10));
+    }
+}
