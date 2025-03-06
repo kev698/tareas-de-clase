@@ -1,0 +1,98 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.consolaproject3;
+
+/**
+ *
+ * @author kevin
+ */
+
+
+   
+
+
+// Clase Empleado con encapsulamiento adecuado
+class Empleado {
+    private String nombre;
+    private int edad;
+    private double salario;
+
+    // Constructor
+    public Empleado(String nombre, int edad, double salario) {
+        this.nombre = nombre;
+        this.edad = edad;
+        this.salario = salario;
+    }
+
+    // Métodos getter y setter
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+
+    public double getSalario() {
+        return salario;
+    }
+
+    public void setSalario(double salario) {
+        this.salario = salario;
+    }
+
+    // Método para mostrar la información del empleado
+    public void mostrarInformacion() {
+        System.out.println("Nombre: " + nombre + ", Edad: " + edad + ", Salario: " + salario);
+    }
+}
+
+// Clase GestorEmpleados para manejar una lista de empleados
+class GestorEmpleados {
+    private List<Empleado> empleados;
+
+    public GestorEmpleados() {
+        this.empleados = new ArrayList<>();
+    }
+
+    // Método para agregar empleados a la lista
+    public void agregarEmpleado(Empleado empleado) {
+        empleados.add(empleado);
+    }
+
+    // Método para mostrar la lista de empleados
+    public void mostrarEmpleados() {
+        for (Empleado empleado : empleados) {
+            empleado.mostrarInformacion();
+        }
+    }
+}
+
+// Clase principal para probar la funcionalidad
+public class Main {
+    public static void main(String[] args) {
+        GestorEmpleados gestor = new GestorEmpleados();
+
+        // Creación de empleados
+        Empleado emp1 = new Empleado("Jose arias", 30, 2500.00);
+        Empleado emp2 = new Empleado("aylin montoya", 28, 2700.50);
+
+        // Agregar empleados al gestor
+        gestor.agregarEmpleado(emp1);
+        gestor.agregarEmpleado(emp2);
+
+        // Mostrar empleados
+        System.out.println("Lista de empleados:");
+        gestor.mostrarEmpleados();
+    }
+}
