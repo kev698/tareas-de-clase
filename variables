@@ -1,0 +1,12 @@
+public class NombresCompañeros {
+    public static void main(String[] args) {
+        // Declaración y asignación del arreglo con 10 nombres
+        String[] nombres = {"Juan", "María", "Carlos", "Ana", "Luis", "Sofía", "Pedro", "Elena", "Miguel", "Laura"};
+        
+        // Imprimir los nombres almacenados en el arreglo
+        System.out.println("Lista de nombres de compañeros:");
+        for (int i = 0; i < nombres.length; i++) {
+            System.out.println((i + 1) + ". " + nombres[i]);
+        }
+    }
+}
