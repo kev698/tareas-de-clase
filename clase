@@ -1,0 +1,21 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+
+/**
+ *
+ * @author kevin
+ */
+public class clase {
+    
+}
+variables dadas
+int M = 6, T = 1, K = -10;
+M > T
+6 > 1  // true
+T / K == -5
+1 / -10
+(6 + 1 == 7) || (6 - 1 == 5)
+(7 == 7) || (5 == 5)
+true || true  // true
